@@ -2,7 +2,7 @@ library(ggplot2)
 
 pdf <- function(data){
   data <- sort(floor(data))
-  vals = unique(data)
+  vals <- unique(data)
   # Calculate the frequency of each value in the vector
   counter <- table(data)
   # Normalize the frequency to obtain the probability distribution
