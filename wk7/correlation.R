@@ -15,7 +15,7 @@ idx <- 0
 # Sigma Top Term
 for(i in 1:length(dogs)){
     # update sum
-    top_term = top_term + (dogs[i] - x_mu) * (treats[i] - y_mu)
+    top_term <- top_term + (dogs[i] - x_mu) * (treats[i] - y_mu)
 }
 
 # Sigma Btm Term
@@ -23,7 +23,7 @@ for(i in 1:length(dogs)){
 btm_term = 0;
 for(i in 1:length(dogs)){
     # update sum
-    btm_term = btm_term + (dogs[i] - x_mu)^2 * (treats[i] - y_mu)^2
+    btm_term <- btm_term + (dogs[i] - x_mu)^2 * (treats[i] - y_mu)^2
 }
 
 # final ans
