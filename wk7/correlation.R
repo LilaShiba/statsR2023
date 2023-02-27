@@ -9,7 +9,7 @@ top_term <- 0
 x_mu <- mean(dogs)
 y_mu <- mean(treats)
 # how long vector is
-n <- dogs.length()
+n <- length(dogs)
 
 idx <- 0
 # Sigma Top Term
@@ -20,7 +20,7 @@ for(i in 1:length(dogs)){
 
 # Sigma Btm Term
 # TODO: FIND ERROR in code translation of formula
-btm_term = 0;
+btm_term <- 0;
 for(i in 1:length(dogs)){
     # update sum
     btm_term <- btm_term + (dogs[i] - x_mu)^2 * (treats[i] - y_mu)^2
